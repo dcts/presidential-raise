@@ -30,17 +30,18 @@
   justify-content: center;
   img {
     height: 200px;
+    margin-left: 0px !important;
   }
 }
 
 .header-bottom-bar {
-  height: 4vh;
+  height: 6vh;
   width: inherit;
   background-color: #153CA0;
 }
 
 .header-main {
-  height: 94vh;
+  height: 91vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
