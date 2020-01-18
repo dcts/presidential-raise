@@ -1,6 +1,6 @@
 # Presidential Raise
 
-### Notes
+###  Notes
 ```ruby
 # CREATED PROJECT WITH "RAILS NEW" COMMAND
 # rails new presidential-raise -M --skip-active-storage --skip-active-record
