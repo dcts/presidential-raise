@@ -59,9 +59,12 @@
         setTimeout(function(){
           $('.candidates-slider').slick({
             autoplay: true,
-            autoplaySpeed: 1500,
+            autoplaySpeed: 1900,
             // dots: true,
             arrows: false,
+            rtl: true,
+            cssEase: 'linear',
+            speed: 480,
           });
           document.querySelector(".candidates-slider").classList.remove("collapsed-slider");
         }, 10);
