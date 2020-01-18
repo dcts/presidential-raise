@@ -1,0 +1,57 @@
+.header-item
+.header-item.logo { grid-area: header; }
+
+.header {
+  .drivers { grid-area: drivers; }
+  .logo { grid-area: header; }
+
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'header drivers';
+}
+
+.tagline {
+  // padding: 0px 40px;
+  h1 { font-size: 60px; text-align: center; }
+}
+
+img.logo {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+img.driver {
+  width: 400px;
+  height: 400px;
+}
+
+
+/*
+ * MEDIA QUERIES!
+ */
+
+// Extra small devices (phones, 600px and down)
+// @media only screen and (min-width: 600px) {...}
+
+// Small devices (portrait tablets and large phones, 600px and up)
+// @media only screen and (min-width: 600px) {...}
+
+// Medium devices (landscape tablets, 768px and up)
+// @media only screen and (min-width: 768px) {...}
+@media only screen and (max-width: 786px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'drivers';
+  }
+}
+// Large devices (laptops/desktops, 992px and up)
+// @media only screen and (min-width: 992px) {...}
+
+// Extra large devices (large laptops and desktops, 1200px and up)
+// @media only screen and (min-width: 1200px) {...}

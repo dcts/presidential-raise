@@ -1,8 +1,16 @@
 <div class="header">
-  <div class="header-left">
-
+  <div class="header-item logo">
+    <div class="flex align-center justify-center">
+      <%= image_tag "logo-placeholder.png", :class => "logo" %>
+    </div>
+    <div class="tagline">
+      <h1>Find out which presidential candidate is funded by which company</h1>
+    </div>
   </div>
-  <div class="header-right">
 
+  <div class="header-item drivers flex align-center justify-center">
+    <%= render partial: "components/carrousel-drivers" %>
   </div>
 </div>
+
+
