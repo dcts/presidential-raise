@@ -3,9 +3,9 @@ class CreateOrders < ActiveRecord::Migration[6.0]
     create_table :orders do |t|
       t.string :name
       t.string :email
-      t.string :payment_id
-      t.integer :candidate
+      t.string :stripe_payment_id
       t.integer :size
+      t.integer :candidate
 
       t.timestamps
     end

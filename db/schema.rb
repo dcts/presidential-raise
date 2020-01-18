@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2020_01_18_174107) do
   create_table "orders", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.string "payment_id"
-    t.integer "candidate"
+    t.string "stripe_payment_id"
     t.integer "size"
+    t.integer "candidate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
