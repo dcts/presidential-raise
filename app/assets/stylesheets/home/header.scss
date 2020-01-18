@@ -90,8 +90,8 @@ img.driver {
 
 .candidate-info {
   color: #353535;
-  border-radius: 30px;
-  padding: 3px 20px;
+  border-radius: 5px;
+  padding: 6.5px 20px;
   background-color: #f1f1f1;
   display: flex;
   justify-content: flex-start;
@@ -99,14 +99,15 @@ img.driver {
   p {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    font-size: 13px;
+    font-size: 12.5px;
     line-height: 1.5;
+    font-weight: 500;
   }
-  i {
-    transform: rotate(90deg);
-    font-size: 23px;
+  img {
+    width: 40px;
+    height: 40px;
     margin: 0;
-    margin-right: 25px;
+    margin-right: 20px;
   }
 }
 
