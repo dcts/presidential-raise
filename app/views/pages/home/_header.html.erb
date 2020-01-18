@@ -1,77 +1,47 @@
+
 <div class="header">
-  <div class="header-top-bar">
-    <!-- 20px blue bar; 100 width -->
-  </div>
-  <div class="header-main">
-    <div class="header-left">
-      <!-- img LOGO -->
-      <div class="website-logo">
-        <img src="https://daz.org/wp-content/uploads/2019/12/2020_U.S-Election-Special_Beitragsbild.png" alt="Presidential Raise 2020">
-      </div>
-      <div class="header-h1">
-        <h1 id="question-american">Answering the question every <br>American asks themselves:</h1>
-        <h1 id="nascar-reference">"What if politics was more honest like Nascar?"</h1>
-      </div>
-      <div class="candidate-info-wrapper">
-        <div class="candidate-info">
-          <i class="fas fa-ruler-combined"></i>
-          <p>candidate info goes here <br>two lines</p>
-        </div>
-        <div class="candidate-info">
-          <i class="fas fa-ruler-combined"></i>
-          <p>candidate info goes here <br>two lines</p>
-        </div>
-        <div class="candidate-info">
-          <i class="fas fa-ruler-combined"></i>
-          <p>candidate info goes here <br>two lines</p>
-        </div>
-      </div>
+  <div class="header-top-bar"><!-- BLUE FOOTER BAR --></div>
+  <div class="header-grid">
 
+    <div class="header-logo grid-item">
+      <%= image_tag "logo-final.png", :class => "" %>
     </div>
-    <div class="header-right">
-      <div class="candidates-slider">
-        <div><%= image_tag "driver1.png", :class => "" %></div>
-        <div><%= image_tag "driver2.png", :class => "" %></div>
-      </div>
-      <!-- <div class="candidates">
-        <%#= image_tag "notperfect.png", :class => "background-image" %>
-      </div> -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- <div class="candidates"> -->
-        <!-- slick slider -->
-        <!-- <div class="candidates-sliderX"> -->
-          <!-- <div> -->
-            <%#= image_tag "driver1.png", :class => "driver" %>
-          <!-- </div> -->
-          <!-- <div> -->
-            <%#= image_tag "driver2.png", :class => "driver" %>
-          <!-- </div> -->
-<!--           <div>
-            <%#= image_tag "driver3.png", :class => "driver" %>
+    <div class="header-description grid-item">
+      <div class="header-description-wrapper">
+        <div class="header-h1">
+          <h1 id="question-american">An answer to the question evry American asks themselves:</h1>
+          <h1 id="nascar-reference">"What if politics was more honest like Nascar?"</h1>
+        </div>
+        <div class="candidate-info-wrapper">
+          <div class="candidate-info">
+            <i class="fas fa-ruler-combined"></i>
+            <p>candidate info goes here <br>two lines</p>
           </div>
-          <div>
-            <%#= image_tag "driver1.png", :class => "driver" %>
-          </div> -->
-        <!-- </div> -->
-      <!-- </div> -->
+          <div class="candidate-info">
+            <i class="fas fa-ruler-combined"></i>
+            <p>candidate info goes here <br>two lines</p>
+          </div>
+          <div class="candidate-info">
+            <i class="fas fa-ruler-combined"></i>
+            <p>candidate info goes here <br>two lines</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="header-jackets grid-item flex justify-center align-center">
+      <% if true %>
+        <div class="candidates-slider">
+          <div><%= image_tag "trump-place-holder.png", :class => "driver" %></div>
+          <div><%= image_tag "trump-place-holder.png", :class => "driver" %></div>
+        </div>
+      <% end %>
+    </div>
+
   </div>
-  <div class="header-bottom-bar">
-    <!-- 20px blue bar; 100 width -->
-  </div>
+
+  <div class="header-bottom-bar"><!-- BLUE FOOTER BAR --></div>
 </div>
 
 
