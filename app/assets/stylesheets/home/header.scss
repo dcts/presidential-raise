@@ -5,6 +5,8 @@
 .header-logo {
   display: flex;
   justify-content: center;
+  background-color: white;
+  z-index: 10;
   img {
     width: 100%;
     max-width: 450px;
@@ -12,7 +14,11 @@
   }
 }
 .header-logo { grid-area: logo; }
-.header-description { grid-area: description; }
+.header-description {
+  grid-area: description;
+  background-color: white;
+  z-index: 10;
+}
 .header-jackets { grid-area: jackets; }
 .header-grid {
   max-width: 1200px;
@@ -60,16 +66,26 @@ img.driver {
   font-size: 28px;
   color: #353535;
   text-align: center;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 #question-american {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   color: #353535;
   font-weight: 400;
   margin-bottom: 30px;
   margin-top: 20px;
   text-align: center;
+}
+
+#pol {
+  color: #E90933;
+}
+
+#nas {
+  color: #153CA0;
 }
 
 .candidate-info {
