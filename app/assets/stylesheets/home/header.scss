@@ -1,57 +1,126 @@
-.header-item
-.header-item.logo { grid-area: header; }
-
 .header {
-  .drivers { grid-area: drivers; }
-  .logo { grid-area: header; }
-
-  border: 1px solid red;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    'header drivers';
+  margin: red;
+  max-height: 100vh;
 }
 
-.tagline {
-  // padding: 0px 40px;
-  h1 { font-size: 60px; text-align: center; }
+.header-top-bar {
+  height: 4vh;
+  // ACCOUNT FOR 4vh + 4VH --> MAIN: 94VH
+  width: inherit;
+  background-color: #153CA0;
 }
 
-img.logo {
-  max-width: 400px;
-  text-align: center;
-  margin: 0 auto;
-  display: inline-block;
+.header-left {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-img.driver {
-  width: 400px;
-  height: 400px;
+.candidate-info-wrapper {
+  margin: 0;
 }
 
+// .header-main-content {
+//   display: flex;
+// }
 
-/*
- * MEDIA QUERIES!
- */
-
-// Extra small devices (phones, 600px and down)
-// @media only screen and (min-width: 600px) {...}
-
-// Small devices (portrait tablets and large phones, 600px and up)
-// @media only screen and (min-width: 600px) {...}
-
-// Medium devices (landscape tablets, 768px and up)
-// @media only screen and (min-width: 768px) {...}
-@media only screen and (max-width: 786px) {
-  .header {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'header'
-      'drivers';
+.website-logo {
+  display: flex;
+  justify-content: center;
+  img {
+    height: 200px;
   }
 }
-// Large devices (laptops/desktops, 992px and up)
-// @media only screen and (min-width: 992px) {...}
 
-// Extra large devices (large laptops and desktops, 1200px and up)
-// @media only screen and (min-width: 1200px) {...}
+.header-bottom-bar {
+  height: 4vh;
+  width: inherit;
+  background-color: #153CA0;
+}
+
+.header-main {
+  height: 94vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#nascar-reference {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #353535;
+}
+
+
+// ON MOBILE
+
+@media only screen and (max-width: 500px) {
+  .header {
+    grid-template-columns: 1fr;
+    // grid-template-areas:
+    //   'header'
+    //   'drivers';
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .header-item
+// .header-item.logo { grid-area: header; }
+
+// .header {
+//   .drivers { grid-area: drivers; }
+//   .logo { grid-area: header; }
+
+//   border: 1px solid red;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-areas:
+//     'header drivers';
+// }
+
+// .tagline {
+//   // padding: 0px 40px;
+//   h1 { font-size: 60px; text-align: center; }
+// }
+
+// img.logo {
+//   max-width: 400px;
+//   text-align: center;
+//   margin: 0 auto;
+//   display: inline-block;
+// }
+
+// img.driver {
+//   width: 400px;
+//   height: 400px;
+// }
+
+
+// /*
+//  * MEDIA QUERIES!
+//  */
+
+// // Extra small devices (phones, 600px and down)
+// // @media only screen and (min-width: 600px) {...}
+
+// // Small devices (portrait tablets and large phones, 600px and up)
+// // @media only screen and (min-width: 600px) {...}
+
+// // Medium devices (landscape tablets, 768px and up)
+// // @media only screen and (min-width: 768px) {...}
+
+// // Large devices (laptops/desktops, 992px and up)
+// // @media only screen and (min-width: 992px) {...}
+
+// // Extra large devices (large laptops and desktops, 1200px and up)
+// // @media only screen and (min-width: 1200px) {...}
