@@ -24,7 +24,10 @@ img.logo {
   display: inline-block;
 }
 
-
+img.driver {
+  width: 400px;
+  height: 400px;
+}
 
 
 /*
@@ -41,6 +44,7 @@ img.logo {
 // @media only screen and (min-width: 768px) {...}
 @media only screen and (max-width: 786px) {
   .header {
+    grid-template-columns: 1fr;
     grid-template-areas:
       'header'
       'drivers';
