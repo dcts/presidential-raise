@@ -1,1 +1,28 @@
 <h1>FAQ</h1>
+<div class="faqAccordion">
+  <h2 class="faq-heading">General</h2>
+  <%= render partial: "pages/home/faq-item",
+    locals: {
+      question: "Can I purchase a jacket?",
+      answer: "Yes you can."
+    } %>
+  <%= render partial: "pages/home/faq-item",
+    locals: {
+      question: "What the heck is Presidential Raise?",
+      answer: "Its a startup founded to sell jackets"
+    } %>
+  <h2 class="faq-heading">Purchase</h2>
+  <%= render partial: "pages/home/faq-item",
+    locals: {
+      question: "blabla",
+      answer: "blabla"
+    } %>
+</div>
+
+<script>
+  const toggleCollapse = (el) => {
+    console.log(el);
+    el.classList.toggle("active")
+    // document.querySelector(".faq-item").classList.add("active")
+  }
+</script>
