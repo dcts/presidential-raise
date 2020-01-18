@@ -113,7 +113,9 @@ img.driver {
 .slick-slide img {
   // max-width: 500px;
 }
-
+.slick-slide {
+  outline: none;
+}
 
 .candidates {
   // height: 100%;

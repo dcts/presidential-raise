@@ -54,13 +54,16 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
+
       $(document).ready(function(){
-        $('.candidates-slider').slick({
-          autoplay: true,
-          autoplaySpeed: 1500,
-          // dots: true,
-          arrows: false,
-        });
+        setTimeout(function(){
+          $('.candidates-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 1500,
+            // dots: true,
+            arrows: false,
+          });
+        }, 3000);
       });
     </script>
 
