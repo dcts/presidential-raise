@@ -1,5 +1,5 @@
 meta_product_name: "Presidential Raise"
 meta_title: "Presidential Raise"
-meta_description: "Politics is a Money Game. A jacket with the patches of the candidate's supporters."
+meta_description: "Politics is a Money Game. This is a jacket that shows how much and from whom politicians have raised funding."
 meta_image: "logo.png" # should exist in `app/assets/images/`
-# twitter_account: "@product_twitter_account"   # required for Twitter Cards
+twitter_account: "@presidentialraise"   # required for Twitter Cards
