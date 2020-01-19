@@ -26,6 +26,7 @@
 }
 .header-grid {
   max-width: 1200px;
+  min-height: 100vh;
   display: grid;
   grid-template-areas:
     'logo        jackets'
@@ -93,10 +94,12 @@ img.driver {
 
 #pol {
   color: #E90933;
+  font-weight: 700;
 }
 
 #nas {
   color: #153CA0;
+  font-weight: 700;
 }
 
 .candidate-info {

@@ -1,0 +1,58 @@
+.productinfo-wrapper {
+  background-color: #F6F6F4;
+}
+
+.productinfo-content {
+  padding: 35px 25px;
+}
+
+.productinfo-title {
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #353535;
+  }
+}
+
+.productinfo-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 0;
+}
+
+.productinfo-left {
+  img {
+    width: 300px;
+  }
+}
+
+.candidate-info-TEST {
+  color: #353535;
+  border-radius: 5px;
+  padding: 6.5px 20px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: flex-start;
+  p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+
+// ON MOBILE
+@media only screen and (max-width: 600px) {
+  .productinfo-main {
+    grid-template-columns: 1fr;
+  }
+}
