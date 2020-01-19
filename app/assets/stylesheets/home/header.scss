@@ -42,11 +42,17 @@ img.driver {
 
 
 .header-top-bar {
-  height: 40px;
-  background-color: #153CA0;
-  // position: sticky;
-  top: 0;
+  height: 20px;
+  background-color: #353535;
 }
+
+.header-top-racing-flag {
+  height: 17px;
+  background-image: url('chess.png');
+  background-size: 18px;
+  opacity: 0.8;
+}
+
 .header-bottom-bar {
   height: 40px;
   background-color: #153CA0;
