@@ -20,7 +20,10 @@
   background-color: white;
   z-index: 10;
 }
-.header-jackets { grid-area: jackets; }
+.header-jackets {
+  grid-area: jackets;
+  position: relative;
+}
 .header-grid {
   max-width: 1200px;
   display: grid;
@@ -148,6 +151,13 @@ img.driver {
   // to fix a bug where slick slider grows infinitely on large displays.
   // this might look even better when adjusted down to max-height of header-section-right but depends on background image
   max-width: 900px;
+  background-image: url(bg-of-slider.png);
+  background-size: 61%;
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+  height: 600px;
+  position: absolute;
+  top: 30px;
 }
 
 
