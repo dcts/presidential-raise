@@ -2,6 +2,14 @@
   padding: 35px 25px;
 }
 
+#red {
+  color: #E90933;
+}
+
+#blue {
+  color: #153CA0;
+}
+
 .productdetails-title {
   h1 {
     font-family: 'Montserrat', sans-serif;
@@ -11,3 +19,43 @@
     color: #353535;
   }
 }
+
+.product-feature {
+  .feature-header {
+    display: flex;
+    color: #353535;
+    i {
+
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+  }
+  .feature-description {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.productdetails-grid {
+  display: grid;
+  grid-template-areas:
+    'size    candidate'
+    'product price';
+}
+
+.feature-candidate { grid-area: candidate }
+.feature-size { grid-are: size }
+.feature-product { grid-are: product }
+.feature-price { grid-are: price }
+
+
+
+
+
+
+
+
+
+
+
