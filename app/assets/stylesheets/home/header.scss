@@ -26,6 +26,7 @@
 }
 .header-grid {
   max-width: 1200px;
+  min-height: 100vh;
   display: grid;
   grid-template-areas:
     'logo        jackets'
