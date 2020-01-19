@@ -59,12 +59,13 @@
         setTimeout(function(){
           $('.candidates-slider').slick({
             autoplay: true,
-            autoplaySpeed: 1900,
-            // dots: true,
+            autoplaySpeed: 2500,
             arrows: false,
             rtl: true,
             cssEase: 'linear',
             speed: 480,
+            // @THOMAS: this option makes the slider fade instead of slide. Might look better.
+            fade: true,
           });
           document.querySelector(".candidates-slider").classList.remove("collapsed-slider");
           // $('.candidates-slider').slick("slickGoTo",7)
