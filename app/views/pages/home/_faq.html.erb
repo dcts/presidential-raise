@@ -4,12 +4,18 @@
   </div>
   <div class="faq-main">
     <div class="faq-item" onclick="toggleCollapse(this)">
-      <p class="faq-category">PRODUCT</p>
-      <p class="faq-question">QUESTION?</p>
-      <p class="faq-ans">ANSWER?</p>
+      <p class="faq-category">Category</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">What is this all about?</p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
     </div>
     <div class="faq-other">
-      <p>Question not answered? Send us an <%= mail_to "support@presidentialraise.com", 'e-mail' %></p>
+      <p>Question not answered? Send us an <%= mail_to "support@presidentialraise.com", 'e-mail' %>.</p>
     </div>
   </div>
 </div>
