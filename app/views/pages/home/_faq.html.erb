@@ -1,4 +1,18 @@
-<h1>hi from faq</h1>
+<div class="faq-wrapper">
+  <div class="faq-title">
+    <h1><span style="font-weight:600">Why we do this</span><br> and other questions</h1>
+  </div>
+  <div class="faq-main">
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">PRODUCT</p>
+      <p class="faq-question">QUESTION?</p>
+      <p class="faq-ans">ANSWER?</p>
+    </div>
+    <div class="faq-other">
+      <p>Question not answered? Send us an <%= mail_to "support@presidentialraise.com", 'e-mail' %></p>
+    </div>
+  </div>
+</div>
 
 <!-- <h1>FAQ</h1>
 <div class="faqAccordion">
@@ -21,10 +35,10 @@
     } %>
 </div> -->
 
-<!-- <script>
+<script>
   const toggleCollapse = (el) => {
     console.log(el);
     el.classList.toggle("active")
     // document.querySelector(".faq-item").classList.add("active")
   }
-</script> -->
+</script>
