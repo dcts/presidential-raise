@@ -4,8 +4,12 @@
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  padding: 25px 30px;
+  padding: 20px 30px;
   display: flex;
+}
+
+.invisible {
+  display: none;
 }
 
 .footer-left {
@@ -52,12 +56,24 @@
 .input {
   font-family: 'Montserrat', sans-serif;
   height: 28px;
-  width: 165px;
+  width: 200px;
   border: none;
   font-size: 13px;
   border-radius: 2px;
   padding-left: 10px;
   align-self: center;
+  background: image-url("arrow-right.png");
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 34px;
+  margin-right: 8px;
+}
+
+.input-wrapper {
+  background: white;
+  border: none;
+  border-radius: 2px;
 }
 
 .input::placeholder {
