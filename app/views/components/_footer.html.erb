@@ -1,9 +1,11 @@
 <div class="footer-wrapper">
   <!-- background as top bar -->
   <div class="footer-left">
-    <div class="btn-support">
-      <p>Support</p>
-    </div>
+    <%= mail_to "support@presidentialraise.com", id:"white" do %>
+      <div class="btn-support">
+        <p>Support</p>
+      </div>
+    <% end %>
     <div class="btn-toc">
       <p>Terms and Conditions</p>
     </div>
