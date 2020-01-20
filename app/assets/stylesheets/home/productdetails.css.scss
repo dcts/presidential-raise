@@ -129,6 +129,52 @@
   }
 }
 
+// ON MOBILE
+@media only screen and (max-width: 600px) {
+  .feature-candidate {
+    grid-item: candidate;
+    border: none;
+    padding-left: 0;
+  }
+
+  .feature-price {
+    grid-item: price;
+    padding-left: 0;
+  }
+
+  .feature-size {
+    grid-item: size;
+    border: none;
+  }
+
+  .feature-product {
+    grid-item: product;
+    border: none;
+  }
+
+  .productdetails-title{
+    h1 {
+      margin:0;
+    }
+  }
+
+  .productdetails-grid {
+    grid-template-areas:
+      'candidate'
+      'size'
+      'product'
+      'price';
+  }
+
+  .feature-description {
+    margin: 0;
+    max-width: 80%;
+  }
+
+  .productdetails-cta { margin-left: 0 }
+
+}
+
 
 
 

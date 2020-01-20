@@ -11,7 +11,7 @@
     font-size: 30px;
     text-align: center;
     color: #353535;
-    margin-left: 32px;
+    // margin-left: 32px;
   }
 }
 
@@ -85,18 +85,15 @@
   margin-bottom: 13px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+// ON MOBILE
+@media only screen and (max-width: 600px) {
+  .faq-ans {
+    min-height: 60px;
+  }
+  .faq-other {
+    margin-top: 15px;
+  }
+}
 
 
 // .faq-heading {
