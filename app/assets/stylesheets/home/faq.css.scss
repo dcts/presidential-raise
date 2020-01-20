@@ -7,7 +7,7 @@
   margin-bottom: 35px;
   h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 30px;
     text-align: center;
     color: #353535;
@@ -16,7 +16,8 @@
 }
 
 .faq-main {
-  margin: 0 150px;
+  // margin: 0 150px;
+  max-width: 600px;
   font-family: 'Montserrat',sans-serif;
   color: black;
 }
@@ -42,6 +43,9 @@
     font-size: 18px;
     align-self: center;
   }
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .faq-ans-wrapper {
@@ -66,7 +70,7 @@
 }
 
 .faq-other {
-  margin-top: 45px;
+  margin-top: 35px;
   font-size: 13px;
   a {
     color: inherit;
@@ -74,7 +78,11 @@
 }
 
 .faq-item.active .faq-ans {
-  max-height: 60px;
+  max-height: 50px;
+}
+
+.faq-item {
+  margin-bottom: 13px;
 }
 
 

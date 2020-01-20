@@ -3,8 +3,9 @@
     <h1><span style="font-weight:600">Why we do this</span><br> and other questions</h1>
   </div>
   <div class="faq-main">
+    <!-- item start -->
     <div class="faq-item" onclick="toggleCollapse(this)">
-      <p class="faq-category">Category</p>
+      <p class="faq-category">Purpose</p>
       <div class="faq-question-wrapper">
         <i class="fas fa-plus"></i>
         <p class="faq-question">What is this all about?</p>
@@ -14,6 +15,72 @@
         <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
       </div>
     </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Politics</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">What's the problem with political transparency?</p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Information</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">Where do you get the information from?</p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Information</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">Are you sure the information is compelte? </p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Money</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">What happens to the profits? </p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Love</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">How can I support you? </p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">Buy a jacket or spread the word - thanks ♥︎</p>
+      </div>
+    </div>
+    <!-- item end -->
     <div class="faq-other">
       <p>Question not answered? Send us an <%= mail_to "support@presidentialraise.com", 'e-mail' %>.</p>
     </div>
@@ -43,8 +110,6 @@
 
 <script>
   const toggleCollapse = (el) => {
-    console.log(el);
     el.classList.toggle("active")
-    // document.querySelector(".faq-item").classList.add("active")
   }
 </script>
