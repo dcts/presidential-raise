@@ -4,7 +4,7 @@
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  padding: 17px 30px;
+  padding: 25px 30px;
   display: flex;
 }
 
@@ -66,4 +66,46 @@
 
 .input:focus {
   outline: none;
+}
+
+// ON MOBILE
+@media only screen and (max-width: 600px) {
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-left {
+    margin-bottom: 23px;
+    flex-direction: column;
+  }
+
+  .btn-support {
+    margin: 0;
+    min-width: 150px;
+    text-align: center;
+  }
+
+  .btn-toc {
+    min-width: 150px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    margin: 0;
+    p {
+      margin: 0;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .input {
+    margin: 0;
+    width: 150px;
+    padding: 0 30px;
+    height: 38px;
+  }
 }
