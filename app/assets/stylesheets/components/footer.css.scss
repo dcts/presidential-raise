@@ -5,28 +5,37 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   padding: 17px 30px;
-  display: flex;
+  // display: flex;
+  display: grid;
+  grid-template-areas:
+    'support toc mail';
+  // grid-template-areas:
+  //   'support toc'
+  //   'mail'
+  //   ;
 }
 
-.footer-left {
-  display: flex;
-  justify-content: flex-start;
-  margin: 0;
-  align-items: center;
-}
+// .footer-left {
+//   // display: flex;
+//   // justify-content: flex-start;
+//   margin: 0;
+//   align-items: center;
+// }
 
 .footer-right {
+  grid-item: mail;
   font-size: 14px;
-  font-weight: 300;
+  // font-weight: 300;
   display: flex;
   margin-right: 15px;
   p {
     margin-right: 15px;
-    align-self: center;
+    // align-self: center;
   }
 }
 
 .btn-support {
+  grid-item: support;
   margin: 0;
   margin-right: 60px;
   border: 3px solid white;
@@ -39,6 +48,7 @@
 }
 
 .btn-toc {
+  grid-item: toc;
   margin: 0;
   border: 3px solid white;
   border-radius: 2px;
@@ -66,4 +76,13 @@
 
 .input:focus {
   outline: none;
+}
+
+// ON MOBILE
+@media only screen and (max-width: 600px) {
+  .footer-wrapper {
+    grid-template-areas:
+      'support toc'
+      'mail mail'
+  }
 }
