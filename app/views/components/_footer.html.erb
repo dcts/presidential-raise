@@ -6,9 +6,11 @@
         <p>Support</p>
       </div>
     <% end %>
-    <div class="btn-toc">
-      <p>Terms and Conditions</p>
-    </div>
+    <%= link_to terms_path, id:"white" do  %>
+      <div class="btn-toc">
+        <p>Terms and Conditions</p>
+      </div>
+    <% end %>
   </div>
   <div class="footer-right">
     <p>Sign up for updates!</p>
