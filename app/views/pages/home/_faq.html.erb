@@ -1,28 +1,115 @@
-<h1>FAQ</h1>
+<div class="faq-wrapper">
+  <div class="faq-title">
+    <h1><span style="font-weight:600">Why we do this</span><br> and other questions</h1>
+  </div>
+  <div class="faq-main">
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Purpose</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">What is this all about?</p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Politics</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">What's the problem with political transparency?</p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Information</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">Where do you get the information from?</p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Information</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">Are you sure the information is compelte? </p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Money</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">What happens to the profits? </p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">It's all about promoting Political Transparency when it comes to campaign fundraising.</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <!-- item start -->
+    <div class="faq-item" onclick="toggleCollapse(this)">
+      <p class="faq-category">Love</p>
+      <div class="faq-question-wrapper">
+        <i class="fas fa-plus"></i>
+        <p class="faq-question">How can I support you? </p>
+      </div>
+      <div class="faq-ans-wrapper">
+        <i class="fas fa-plus"></i> <!-- invisible -->
+        <p class="faq-ans">Buy a jacket or spread the word - thanks ♥︎</p>
+      </div>
+    </div>
+    <!-- item end -->
+    <div class="faq-other">
+      <p>Question not answered? Send us an <%= mail_to "support@presidentialraise.com", 'e-mail' %>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- <h1>FAQ</h1>
 <div class="faqAccordion">
   <h2 class="faq-heading">General</h2>
-  <%= render partial: "pages/home/faq-item",
+  <%#= render partial: "pages/home/faq-item",
     locals: {
       question: "Can I purchase a jacket?",
       answer: "Yes you can."
     } %>
-  <%= render partial: "pages/home/faq-item",
+  <%#= render partial: "pages/home/faq-item",
     locals: {
       question: "What the heck is Presidential Raise?",
       answer: "Its a startup founded to sell jackets"
     } %>
   <h2 class="faq-heading">Purchase</h2>
-  <%= render partial: "pages/home/faq-item",
+  <%#= render partial: "pages/home/faq-item",
     locals: {
       question: "blabla",
       answer: "blabla"
     } %>
-</div>
+</div> -->
 
 <script>
   const toggleCollapse = (el) => {
-    console.log(el);
     el.classList.toggle("active")
-    // document.querySelector(".faq-item").classList.add("active")
   }
 </script>
