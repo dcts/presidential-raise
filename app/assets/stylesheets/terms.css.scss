@@ -1,0 +1,63 @@
+.terms-wrapper {
+  background-color: rgba(251, 238, 202, 0.3);
+  min-height: 100vh;
+}
+
+.terms-content {
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #353535;
+}
+
+.product-logo {
+  text-align: center;
+  img {
+    width: 220px;
+  }
+}
+
+.effective-date {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.terms-main {
+  padding: 40px 0;
+}
+
+.terms-header {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+.terms-text {
+  padding: 15px 0px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+  a {
+    color: #353535;
+  }
+  ul {
+    line-height: 1.5;
+  }
+}
+
+ul {
+    line-height: 1.5;
+  }
+
+
+@media only screen and (max-width: 600px) {
+  .terms-content {
+    width: inherit;
+  }
+
+  .terms-main {
+    padding: 40px 20px;
+  }
+}
