@@ -5,7 +5,11 @@
         <%= image_tag "logo-final.png", alt: "product logo presidential raise" %>
       <% end %>
     </div>
-    <p class="effective-date">these terms and conditions are effective as of 01/20/2020</p>
+    <p class="effective-date">
+      these terms and conditions are effective as of <b>01/20/2020</b>
+      <br>
+      to view our <b>privacy policy</b> please click <%= link_to "here", privacy_path  %>
+    </p>
     <div class="terms-main">
       <div class="terms-element">
         <h1 class="terms-header">Overview</h1>
