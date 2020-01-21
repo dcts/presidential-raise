@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   #pages
   get '/terms', to: 'pages#terms', as: 'terms'
+  get '/privacy', to: 'pages#privacy', as: 'privacy'
 end
